@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
+require('dotenv').config()
 const URL_BASE_DE_DATOS = process.env.URL_BASE_DE_DATOS;
-
 mongoose.connect(URL_BASE_DE_DATOS)
     .then(() => {
         console.log("Conexión exitosa a la base de datos 'estudiantes_db'");
